@@ -1,0 +1,20 @@
+{
+    "name": "markdown-snippets",
+    "displayName": "markdown-snippets",
+    "description": "markdown snippets",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "md",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

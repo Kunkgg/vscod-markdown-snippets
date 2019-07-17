@@ -1,0 +1,252 @@
+{
+ "header-1": {
+		"prefix": "h1",
+		"body": [
+			"# $1",
+			"",
+			"$0"
+		],
+		"description": "header-1"
+	},
+ "header-2": {
+		"prefix": "h2",
+		"body": [
+			"## $1",
+			"",
+			"$0"
+		],
+		"description": "header-2"
+	},
+ "header-3": {
+		"prefix": "h3",
+		"body": [
+			"### $1",
+			"",
+			"$0"
+		],
+		"description": "header-3"
+	},
+ "header-4": {
+		"prefix": "h4",
+		"body": [
+			"#### $1",
+			"",
+			"$0"
+		],
+		"description": "header-4"
+	},
+ "header-5": {
+		"prefix": "h5",
+		"body": [
+			"##### $1",
+			"",
+			"$0"
+		],
+		"description": "header-5"
+	},
+ "header-6": {
+		"prefix": "h6",
+		"body": [
+			"###### $1",
+			"",
+			"$0"
+		],
+		"description": "header-6"
+	},
+ "blockquote-cite": {
+		"prefix": "quote-cite",
+		"body": [
+			"> ${1:Quote-body}",
+			"> <cite>${2:Author}</cite>",
+			"$0"
+		],
+		"description": "blockquote-cite"
+	},
+ "keyboard": {
+		"prefix": "kbd",
+		"body": [
+			"[[${1:kbd}]]$0"
+		],
+		"description": "Keyboard"
+	},
+ "code-block": {
+		"prefix": "code-block",
+		"body": [
+			"``` ${1:Language}",
+			"${2:Code-body}",
+			"$0"
+		],
+		"description": "code-block"
+	},
+ "link-plain": {
+		"prefix": "link-plain",
+		"body": [
+			"<${1:link}>$0"
+		],
+		"description": "link-plain"
+	},
+ "link-text": {
+		"prefix": "link-text",
+		"body": [
+			"[${1:Text}](${2:Link} \"${3:Title}\"$4)$0"
+		],
+		"description": "link-text"
+	},
+ "link-quote": {
+		"prefix": "link-quote",
+		"body": [
+			"[${1:Text}][${2:Source}]$0"
+		],
+		"description": "link-quote"
+	},
+ "link-source": {
+		"prefix": "link-source",
+		"body": [
+			"[${1:Source}]: ${2:Link} \"${3:Title}\"$0"
+		],
+		"description": "link-source"
+	},
+ "image": {
+		"prefix": "img",
+		"body": [
+			"![${1:Text}](${2:Link} \"${3:Title}\"$4)$0"
+		],
+		"description": "image"
+	},
+ "image-size": {
+		"prefix": "img-size",
+		"body": [
+			"![${1:Text}](<${2:Link}> \"${3:Title}\"$4 =${5:width}%x100%$6)$0"
+		],
+		"description": "image-size"
+	},
+ "sup": {
+		"prefix": "sup",
+		"body": [
+			"^$1^$0"
+		],
+		"description": "sup"
+	},
+ "sub": {
+		"prefix": "sub",
+		"body": [
+			"~$1~$0"
+		],
+		"description": "sub"
+	},
+ "ins": {
+		"prefix": "ins",
+		"body": [
+			"++$1++$0"
+		],
+		"description": "ins"
+	},
+ "mark": {
+		"prefix": "mark",
+		"body": [
+			"==$1==$0"
+		],
+		"description": "mark"
+	},
+ "bold": {
+		"prefix": "bold",
+		"body": [
+			"__$1__$0"
+		],
+		"description": "bold"
+	},
+ "italic": {
+		"prefix": "italic",
+		"body": [
+			"_$1_$0"
+		],
+		"description": "italic"
+	},
+ "strike through": {
+		"prefix": "delete",
+		"body": [
+			"_$1_$0"
+		],
+		"description": "strike through"
+	},
+ "foot note first": {
+		"prefix": "footnote-1",
+		"body": [
+			"[^first]",
+			"",
+			"[^first]: ${1:Footnotes}"
+		],
+		"description": "foot note first"
+	},
+ "foot note second": {
+		"prefix": "footnote-2",
+		"body": [
+			"[^second]",
+			"",
+			"[^second]: ${1:Footnotes}"
+		],
+		"description": "foot note second"
+	},
+ "foot note third": {
+		"prefix": "footnote-3",
+		"body": [
+			"[^third]",
+			"",
+			"[^third]: ${1:Footnotes}"
+		],
+		"description": "foot note third"
+	},
+ "foot note text": {
+		"prefix": "footnote-text",
+		"body": [
+			"^[${1:Text footnote}]$0"
+		],
+		"description": "foot note text"
+	},
+ "Definition lists": {
+		"prefix": "li-definition",
+		"body": [
+			"${1:Term}",
+			":    ${2:Definition}",
+			"",
+			"$0"
+		],
+		"description": "Definition lists"
+	},
+ "Abbreviations": {
+		"prefix": "abbr",
+		"body": [
+			"*[${1:Abbr}]: ${2:Definition}"
+		],
+		"description": "Abbreviations"
+	},
+ "Custom containers": {
+		"prefix": "div",
+		"body": [
+			"::: ${1:Container type}",
+			"${2:Content}",
+			":::",
+			"",
+			"$0"
+		],
+		"description": "Custom containers include 3 types, warning, tip, important"
+	},
+ "checkbox": {
+		"prefix": "li-checkbox",
+		"body": [
+			"[ ] ${1:Text}",
+			"[ ] ${2:Text}",
+			"[ ] ${3:Text}"
+		],
+		"description": "checkbox"
+	},
+ "task lists": {
+		"prefix": "li-task",
+		"body": [
+			"- [ ] ${1:Text}",
+			"- [ ] ${2:Text}",
+			"- [ ] ${3:Text}"
+		],
+		"description": "task lists"
+	}
+}
